@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'screens/lenta.dart';
 void main() {
   runApp(const MyApp());
 }
@@ -15,18 +15,10 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       initialRoute: '/',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.indigo,
       ),
-      home:  MyHomePage(),
+      home:  Lenta(),
     );
   }
 }
 
-class MyHomePage extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-    body: Text('good'),
-    );
-  }
-}
